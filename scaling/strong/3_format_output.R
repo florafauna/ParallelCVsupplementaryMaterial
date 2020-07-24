@@ -37,7 +37,7 @@ dd %>% mutate(speedup = 1/(time / max(time))) -> dd
 
 pdf("figs/scaling_strong.pdf", height=4.5*.9, width=6*.9)
 ggplot(dd, aes(x=CPU, y=speedup, color=as.factor(bound), shape=as.factor(bound))) +
-    geom_abline(slope=1, color="gray50", linetype=2) +
+    geom_abline(slope=c(1,2,4), color="gray70", linetype=2) +
     geom_point(size=3) +
     geom_line(alpha=.7, show.legend=FALSE) +
     scale_x_continuous(trans = 'log2', limits=c(1,64), breaks=2^(0:6), minor_breaks=NULL) +
