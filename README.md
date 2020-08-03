@@ -3,9 +3,8 @@ by F. Gerber (gerber@mines.edu) and D. W. Nychka
 
 ## Supplementary material 
 
-
-
 The repository contains:
+- supplement.pdf: supplementary figures and explanations for the manuscript
 - **Rhelper**: all R helper functions
 - **sim**: the simulation experiments from Section 3 
 - **alaskaData**: the LiDAR data, preparation, division into subsets used in Section 4
